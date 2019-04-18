@@ -19,10 +19,26 @@ module.exports = merge(webpackDevConfig, {
           {loader: 'css-loader'}
         ]
       },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 1024*8, // 8k 以下的 base64 内联，不产生图片
+            fallback: 'file-loader',
+            name: '[name].[ext]?[hash]',
+            outputPath: 'image/', // 输出路径
+            publicPath: '../image' // 可以问到图片的引用路径
+          }
+        }
+      },
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': require('../config/dev.env.js')
+    }),
   ],
   devServer: {
     host: 'localhost',

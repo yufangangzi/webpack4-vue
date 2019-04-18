@@ -1,0 +1,156 @@
+.login{
+  height: 100%;
+  width:100%;
+  background: url('../img/loginbg.png') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .weblogo{
+    position: absolute;
+    top:16px;
+    left: 28px;
+    span{
+      font-size:18px;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      vertical-align: top;
+      margin-left: 10px;
+    }
+  }
+  .bottom_container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+    font-size:13px;
+    font-weight:400;
+    color:#fff;
+    .xian{
+      display: inline-block;
+      width: 74px;
+      height: 1px;
+      background-color: #fff;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .xian-right{
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+  }
+  .login-box{
+    width:858px;
+    height:540px;
+    margin: 0 auto;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 23px 3px rgba(0,94,241,0.5);
+    border-radius:15px;
+    .box-left{
+      padding-top: 70px;
+    }
+    .box-right{
+      padding-top: 89px;
+      text-align: center;
+      h2{
+        font-size: 28px;
+        color: #333;
+        font-weight: 400;
+        margin-bottom: 69px;
+      }
+      .loginForm{
+        width: 250px;
+        padding-left: 75px;
+        .form-item{
+          border-bottom: 1px solid #eee;
+          height: 40px;
+          line-height: 40px;
+          text-align: left;
+          margin-bottom: 20px;
+          position: relative;
+          .error{
+            position: absolute;
+            width: 100%;
+            right: 0;
+            top: 30px;
+            text-align: right;
+            font-size: 12px;
+            color: #91939A
+          }
+          .user-icon{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('../img/user.png');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+          .pass-icon{
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+            background-image: url('../img/password.png');
+          }
+          .passsave-icon{
+            width: 15px;
+            height: 16px;
+            background-size: 15px 16px;
+            background-image: url('../img/passsave.png');
+            cursor: pointer;
+          }
+          .passsaved {
+            background-image: url('../img/passsaved.png');
+          }
+        }
+        .formItemError{
+          border-bottom: 2px solid #F33A2C;
+        }
+        .loginBtn{
+          display: inline-block;
+          width:228px;
+          height:50px;
+          background:rgba(77,210,135,1);
+          border-radius:25px;
+          font-size:18px;
+          color: #fff;
+          font-weight: 400;
+          line-height: 50px;
+          margin-left: -36px;
+          margin-bottom: 55px;
+        }
+        .form-item-last{
+          border-bottom: none;
+          span{
+            font-size: 13px;
+            color: #919191;
+          }
+        }
+        input{
+          background:none;  
+          outline:none;  
+          border:0px;
+          height: 25px;
+          line-height: 25px;
+        }
+        .username{
+          
+        }
+      }
+      
+    }
+  }
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #A9A9A9;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #A9A9A9;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #A9A9A9;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #A9A9A9;
+}
